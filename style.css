@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #f0f0f2; /* Light background color */
+}
+
+#quiz-container {
+    margin: auto;
+    width: 90%;
+    max-width: 700px; /* Increased max width */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#answers {
+    margin-bottom: 10px; /* Minimize spacing between answers and feedback images */
+}
+
+#question {
+    margin-bottom: 10px; /* Minimize spacing to bring images closer */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.answer {
+    display: block;
+    margin: 15px auto; /* Increased spacing */
+    padding: 15px 20px; /* Larger buttons */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px; /* Larger font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Smooth transition for interaction */
+}
+
+.answer:hover, .answer:focus {
+    transform: scale(1.05); /* Slightly enlarge buttons on hover/focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover/focus */
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #28a745; /* Green color for actions */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Consistent shadow effect */
+    transition: background-color 0.2s ease; /* Smooth background transition */
+}
+
+button:hover, button:focus {
+    background-color: #218838; /* Darker shade on hover/focus */
+}
+
+.image-container {
+    overflow: hidden; /* Hide parts of the image that are outside this container */
+    display: inline-block; /* Or 'block' depending on your layout */
+    height: 200px; /* Adjust based on the desired visible portion of the image */
+    width: auto; /* Adjust if you want to control the width */
+}
+
+#retakeButton {
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #4CAF50; /* A green color, for example */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+
+#restartMessage p {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+
+
+#feedback img {
+    max-width: 400px; /* Increase the size of the images */
+    width: 50%; /* Adjust based on preference */
+    margin: 20px auto; /* Center align the images */
+    display: block; /* Ensure images are block level for margin auto to work */
+    border-radius: 5px; /* Optional: rounded corners for images */
+}
+
+/* Additional styling for specific elements if needed */
