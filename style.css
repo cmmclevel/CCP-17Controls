@@ -69,7 +69,11 @@ button:hover, button:focus {
     width: auto; /* Adjust if you want to control the width */
 }
 
-
+#buttonContainer {
+    display: flex;
+    justify-content: space-between; /* This spreads the buttons apart */
+    padding: 0 10px; /* Optional: Adds some padding on the sides */
+}
 
 
 #feedback img {
