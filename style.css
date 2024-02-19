@@ -68,38 +68,16 @@ button:hover, button:focus {
     height: 200px; /* Adjust based on the desired visible portion of the image */
     width: auto; /* Adjust if you want to control the width */
 }
-#buttonContainer {
-    padding: 0 20px; /* Adds padding to the left and right */
-}
 
-#backQuestion, #nextQuestion {
-    flex: 1; /* Optional: Makes buttons take up equal space */
-    margin: 0 10px; /* Adds margin for additional spacing */
-}
 
-@media (max-width: 600px) {
-    #buttonContainer {
-        flex-direction: column; /* Stacks buttons vertically */
-    }
-    #backQuestion, #nextQuestion {
-        width: 100%; /* Full width for easier tapping on mobile */
-        margin: 5px 0; /* Adjusts margin for vertical stacking */
-    }
-}
+
+
 #feedback img {
     max-width: 400px; /* Increase the size of the images */
     width: 50%; /* Adjust based on preference */
     margin: 20px auto; /* Center align the images */
     display: block; /* Ensure images are block level for margin auto to work */
     border-radius: 5px; /* Optional: rounded corners for images */
-}
-
-#backQuestion {
-    margin-right: 20px; /* Adjust the space between the Back and Next buttons */
-}
-
-#nextQuestion {
-    margin-left: 20px; /* Adjust the space between the Back and Next buttons */
 }
 
 /* Additional styling for specific elements if needed */
