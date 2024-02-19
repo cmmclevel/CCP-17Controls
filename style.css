@@ -80,11 +80,12 @@ button:hover, button:focus {
     border-radius: 5px; /* Optional: rounded corners for images */
 }
 
-@media (max-width: 600px) {
-    #backQuestion, #nextQuestion {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+#backQuestion {
+    margin-right: 20px; /* Adjust the space between the Back and Next buttons */
+}
+
+#nextQuestion {
+    margin-left: 20px; /* Adjust the space between the Back and Next buttons */
 }
 
 /* Additional styling for specific elements if needed */
