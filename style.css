@@ -68,14 +68,24 @@ button:hover, button:focus {
     height: 200px; /* Adjust based on the desired visible portion of the image */
     width: auto; /* Adjust if you want to control the width */
 }
-
 #buttonContainer {
-    display: flex;
-    justify-content: space-between; /* This spreads the buttons apart */
-    padding: 0 10px; /* Optional: Adds some padding on the sides */
+    padding: 0 20px; /* Adds padding to the left and right */
 }
 
+#backQuestion, #nextQuestion {
+    flex: 1; /* Optional: Makes buttons take up equal space */
+    margin: 0 10px; /* Adds margin for additional spacing */
+}
 
+@media (max-width: 600px) {
+    #buttonContainer {
+        flex-direction: column; /* Stacks buttons vertically */
+    }
+    #backQuestion, #nextQuestion {
+        width: 100%; /* Full width for easier tapping on mobile */
+        margin: 5px 0; /* Adjusts margin for vertical stacking */
+    }
+}
 #feedback img {
     max-width: 400px; /* Increase the size of the images */
     width: 50%; /* Adjust based on preference */
