@@ -9,8 +9,9 @@
     <div id="app">
         <div id="question"></div>
         <div id="answers"></div>
-	<button id="backQuestion" onclick="previousQuestion()" style="margin-right: 20px;">Back</button>
-	<button id="nextQuestion" onclick="nextQuestion()" style="margin-left: 20px;">Next</button>
+        <button id="backQuestion" onclick="previousQuestion()">Back</button>
+        <button id="nextQuestion" onclick="nextQuestion()">Next</button>
+		<button id="retakeButton" onclick="retakeQuiz()" style="display:none;">Retake Quiz</button>
 
 
 
@@ -30,11 +31,7 @@
 	<div id="restartMessage" style="display:none;">
 		<p>Quiz completed! Refresh the page to retake the quiz.</p>
 	</div>
-	<div id="buttonContainer">
-	    <button id="backQuestion" onclick="previousQuestion()">Back</button>
-	    <button id="nextQuestion" onclick="nextQuestion()">Next</button>
-	</div>
-		
+
 	
     <audio id="correctSound" src="correct-answer.wav"></audio>
     <audio id="incorrectSound" src="incorrect.wav"></audio>
