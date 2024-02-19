@@ -80,4 +80,11 @@ button:hover, button:focus {
     border-radius: 5px; /* Optional: rounded corners for images */
 }
 
+@media (max-width: 600px) {
+    #backQuestion, #nextQuestion {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 /* Additional styling for specific elements if needed */
